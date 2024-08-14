@@ -16,10 +16,24 @@
     <h1>Óla, Mundo!</h1>
     <p>Já me livrei da maldição!!</p>
 
+    <div id="counter">
+        Contador: {{ counter }}
+    </div>
+
     <script>
         window.alert('Minha primeira Mensagem!')
         window.confirm('Está gostando de JS?')
         window.prompt('Qual é o seu nome?')
+
+        const Counter = {
+        data() {
+            return {
+            counter: 0
+            }
+        }
+        }
+
+        Vue.createApp(Counter).mount('#counter')
     </script>
 </body>
 </html>
