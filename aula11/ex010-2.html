@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightslategray;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: lightskyblue;
+            width: 450px;
+            height: 150px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        main > h1 {
+            padding: 5px 0px;
+        }
+
+        main > input#pais {
+            width: 130px;
+            height: 30px;
+        }
+
+        main > input#button {
+            width: 70px;
+            height: 30px;
+        }
+
+        p {
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div>
+            <h1>Naturalidade</h1>
+            Qual o pais que você está? <input type="text" name="pais" id="pais" placeholder="Digite aqui...">
+            <input type="button" id="button" value="Verificar" onclick="verificarpais()">
+            <div id="res"> </div>
+        </div>
+
+    </main>
+
+    <script>
+        function verificarpais() {
+            var pais = document.getElementById('pais').value;
+            res.innerHTML = `<p>Vivendo em ${pais}.</p>`
+            
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
