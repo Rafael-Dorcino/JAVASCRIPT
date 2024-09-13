@@ -10,13 +10,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(52, 116, 253);
 
+    
+}
+
+main {
     display: flex;
     flex-flow: column nowrap;
-
+    align-items: center;
 }
 
 header {
     color: white;
+    padding: 15px;
 }
 
 section {
@@ -25,8 +30,10 @@ section {
     padding: 15px;
     width: 500px;
     justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
 }
 
 footer {
     color: white;
+    padding: 15px;
 }
