@@ -36,6 +36,11 @@ section {
     flex-flow: column nowrap;
     align-items: center;
 }
+
+div#msg {
+    padding: 5px;
+}
+
 img {
     width: 250px;
     height: 250px;
