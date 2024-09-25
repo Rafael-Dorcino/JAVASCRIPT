@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Vamos contar</h1>
+        </header>
+        <section>
+            <div class="inic">
+                <label for="inicio">Início:</label>
+                <input type="number" name="inicio" id="inicio">
+                <br>
+                <label for="fimn">Fim:</label>
+                <input type="number" name="fimn" id="fimn">
+                <br>
+                <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="passo">
+                <br>
+                <input type="button" value="Contar" class="button" onclick="contar()">
+            </div>
+            <div id="res">
+                Preparando a contagem...
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Curso em video / Rafael dorcino</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
