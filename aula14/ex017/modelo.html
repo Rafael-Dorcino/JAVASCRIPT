@@ -8,17 +8,18 @@
 </head>
 <body>
     <main>
-        <header>
+        <header></header>
             <h1>Tabuada</h1>
         </header>
         <section>
             <div class="inic">
                 <label for="num">Número:</label>
                 <input type="number" name="num" id="num">
-                <input type="button" value="Gerar Tabuada">
+
+                <input type="button" value="Gerar Tabuada" onclick="calcular()">
             </div>
-            <div>
-                
+            <div id="res">
+                Calculando...
             </div>
         </section>
         <footer>
